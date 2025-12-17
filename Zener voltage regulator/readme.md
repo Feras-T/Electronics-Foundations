@@ -1,4 +1,4 @@
-#  Line regulator using Zener diode
+#   Line regulator using Zener diode
 
 ## Description
 This is a demonstration of the capability of regulating voltage using Zener Diode.
