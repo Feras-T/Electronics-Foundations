@@ -1,32 +1,76 @@
-#   Line regulator using Zener diode
+# Line Regulator Using a Zener Diode
 
 ## Description
-This is a demonstration of the capability of regulating voltage using Zener Diode.
-The Zener diode reverse voltage is (3.3V) and as known it will maintain this value even when a change in voltage occur.
-For this demonstration  A load is connected parallel with Zener and the goal is to see the output voltage in the load whether it will change if the main power supply change or not.
-The schematics of the circuit is shown below
+This experiment demonstrates the capability of a Zener diode to regulate voltage.  
+The Zener diode used has a reverse breakdown voltage of **3.3V**, which ideally remains constant even when the input voltage varies.
 
+A load is connected in parallel with the Zener diode.  
+The objective is to observe whether the output voltage across the load changes when the input supply voltage is increased or decreased.
+
+The schematic of the circuit is shown below.
+
+---
 
 ## Circuit Diagram
-![Schimatic](images/Schimatic.png)
-![real_sch](images/real_sch.jpeg)
+![Schematic](images/Schimatic.png)  
+![Real Circuit](images/real_sch.jpeg)
 
-### The Expermimnt
-#### Higher Voltage
-Here we will make zener face higher voltage and see if it could keep the voltage same.
+---
 
+## The Experiment
+
+### **Higher Input Voltage**
+In this part, the Zener diode is subjected to increasing input voltage to evaluate its ability to maintain regulation.
+
+#### **Input: 15V**
 ![setting_value_15V](images/setting_value_15V.png)
-The voltage from power supply is set to 15V and the output voltage in the Zener and the load is 3.31V, we can notice there's no huge difference in Zener.
 
+- Input voltage: **15V**  
+- Output voltage across Zener + load: **3.31V**
+
+The Zener holds very close to its rated voltage with minimal deviation.
+
+---
+
+#### **Input: 16V**
 ![source_value_16V_Output3.35V](images/source_value_16V_Output3.35V.png)
-The power source voltage value increased 1V (from 15-16v) and we see the output voltage in the Zener and the load increased just 0.04V.
 
+- Input increased by **1V** (from 15V → 16V)  
+- Output increases only **~0.04V** (to **3.35V**)
+
+This shows good voltage regulation.
+
+---
+
+#### **Input: 25V**
 ![power_source_25V_output_3.62V](images/power_source_25V_output_3.62V.png)
-Until the voltage reaches 25V (increased 10v) and yet the output voltage in the Zener diode and the load changed just ~0.3V as shown below.
 
-#### Lower Voltage
+- Input increased by **10V** (15V → 25V)  
+- Output changes by only **~0.3V** (to **3.62V**)
+
+Even with a large input change, the Zener output remains relatively stable.
+
+---
+
+### **Lower Input Voltage**
 ![source_value_10V_output_3.31V](images/source_value_10V_output_3.31V.png)
-For lower voltage demonstration, the power supply has been set from 15V to 10V and we got ~3.1V in zener output that's mean 5V drop from the source leaded only 0.3V drop in the Zener output.
+
+For the lower voltage test, the input is reduced from **15V to 10V**.
+
+- Input drop: **5V**  
+- Output drop: only **~0.3V** (from 3.3V → ~3.1V)
+
+This indicates that the Zener diode maintains regulation reasonably well even when the input voltage decreases, as long as the diode remains in its breakdown region.
+
+---
 
 ## Conclusion
-The Zener diode roughly could work as a regulator, also as shown in the experiments the Zener regulator regulating better in higher voltage than lower voltage.
+The Zener diode is capable of acting as a simple voltage regulator.  
+From the experiment, we observe:
+
+- The Zener diode regulates **better at higher input voltages** (strong breakdown region).  
+- Output voltage changes very little compared to large variations in input voltage.  
+- Regulation becomes weaker when the input voltage drops close to the Zener breakdown threshold.
+
+Overall, the Zener diode provides effective voltage regulation for low-current, low-precision applications.
+
