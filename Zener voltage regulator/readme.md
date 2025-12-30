@@ -59,30 +59,16 @@ In this part, the Zener diode is subjected to increasing input voltage to evalua
 #### **Input: 15V**
 ![setting_value_15V](images/setting_value_15V.png)
 
-- Input voltage: **15V**  
-- Output voltage across Zener + load: **3.31V**
-
 The Zener holds very close to its rated voltage with minimal deviation.
 
 ---
 
 #### **Input: 16V**
 ![source_value_16V_Output3.35V](images/source_value_16V_Output3.35V.png)
-
-- Input increased by **1V** (from 15V → 16V)  
-- Output increases only **~0.04V** (to **3.35V**)
-
-This shows good voltage regulation.
-
 ---
 
 #### **Input: 25V**
 ![power_source_25V_output_3.62V](images/power_source_25V_output_3.62V.png)
-
-- Input increased by **10V** (15V → 25V)  
-- Output changes by only **~0.3V** (to **3.62V**)
-
-Even with a large input change, the Zener output remains relatively stable.
 
 ---
 
