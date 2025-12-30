@@ -1,7 +1,8 @@
-# Line Regulator Using a Zener Diode
+# Vlotage Regulator Using a Zener Diode
 
 ## Objective
-This experiment demonstrates the capability of a Zener diode to regulate output voltage.  
+This experiment demonstrates the ability of a Zener diode to regulate the output voltage by operating in its reverse-breakdown region.
+ 
 
 ## Background Theory
 A Zener diode is primarily used to maintain a stable reference voltage by operating in its controlled reverse-breakdown region, making it suitable for simple voltage regulation and over-voltage protection in electronic circuits.
@@ -42,11 +43,15 @@ The objective is to observe whether the output voltage across the load changes w
 1. Set power supply to 15 V.
 2. increase the power supply voltage up to 25V.
 2. Measure Load voltage while increasing the power supply voltage.
-3. 
-4. Record values once readings stabilize.
+4. Compare load voltage values with power suplly value.
 
 
-## The Experiment
+## Measurements
+| Power Supply Voltage (V) | Load Voltage (Zener Voltage) |
+|------------|-------------|
+| 15 | 3.31 V |
+| 16 | 3.35 V |
+| 25 | 3.62 V |
 
 ### **Higher Input Voltage**
 In this part, the Zener diode is subjected to increasing input voltage to evaluate its ability to maintain regulation.
