@@ -1,21 +1,50 @@
 # Line Regulator Using a Zener Diode
 
-## Description
-This experiment demonstrates the capability of a Zener diode to regulate voltage.  
+## Objective
+This experiment demonstrates the capability of a Zener diode to regulate output voltage.  
+
+## Background Theory
+A Zener diode is primarily used to maintain a stable reference voltage by operating in its controlled reverse-breakdown region, making it suitable for simple voltage regulation and over-voltage protection in electronic circuits.
+
+---
+
+## Circuit Diagram
+![Schematic](images/Schimatic.png)
+
+The Zener diode is reverse-biased and connected in parallel with the load.
+A 1 kΩ resistor is placed in series between the power supply and the Zener–load node to limit the current.
+The load consists of a red LED in series with a 330 Ω resistor.
+
+
+---
+
+## Components & Instruments
+| Item | Specification |
+|----|-------------|
+| Diode | 3.3 Vz |
+| Resistor | 1 kΩ ±5% |
+| Resistor | 330 Ω ±5% |
+| LED | Red LED, Vf ≈ 2.0 V, If ≈ 10–20 mA |
+| Multimeter | Digital |
+| Power Supply | 0–30 V |
+
+## Experimental Setup
+![Real Circuit](images/real_sch.jpeg)
+
+
 The Zener diode used has a reverse breakdown voltage of **3.3V**, which ideally remains constant even when the input voltage varies.
 
 A load is connected in parallel with the Zener diode.  
 The objective is to observe whether the output voltage across the load changes when the input supply voltage is increased or decreased.
 
-The schematic of the circuit is shown below.
 
----
+## 6. Procedure
+1. Set power supply to 15 V.
+2. increase the power supply voltage up to 25V.
+2. Measure Load voltage while increasing the power supply voltage.
+3. 
+4. Record values once readings stabilize.
 
-## Circuit Diagram
-![Schematic](images/Schimatic.png)  
-![Real Circuit](images/real_sch.jpeg)
-
----
 
 ## The Experiment
 
