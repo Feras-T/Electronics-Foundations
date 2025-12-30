@@ -53,13 +53,10 @@ The objective is to observe whether the output voltage across the load changes w
 | 16 | 3.35 V |
 | 25 | 3.62 V |
 
-### **Higher Input Voltage**
-In this part, the Zener diode is subjected to increasing input voltage to evaluate its ability to maintain regulation.
+
 
 #### **Input: 15V**
 ![setting_value_15V](images/setting_value_15V.png)
-
-The Zener holds very close to its rated voltage with minimal deviation.
 
 ---
 
@@ -69,6 +66,21 @@ The Zener holds very close to its rated voltage with minimal deviation.
 
 #### **Input: 25V**
 ![power_source_25V_output_3.62V](images/power_source_25V_output_3.62V.png)
+
+## 8. Results & Analysis
+The input power supply voltage was increased from 15 V to 25 V (ΔV = 10 V), while the load voltage changed by only 0.31 V.
+With a 10 V input and a 1 kΩ series resistor, the Zener diode produced an output of approximately 3.0 V rather than its nominal 3.3 V due to insufficient Zener current for proper regulation.
+
+## Discussion
+In practical designs, insufficient Zener current can lead to poor voltage regulation, which limits the suitability of Zener diodes for precision voltage regulation in embedded systems.
+ 
+## 11. Lessons Learned
+ -Zener diodes provide a simple and rough method for voltage regulation.
+ -The Zener diode performance strongly depends on the operating current, and insufficient Zener current can result in poor regulation.
+
+## Conclusion
+This experiment demonstrated the voltage regulation behavior of a Zener diode in a shunt regulator configuration, while also showing that insufficient Zener current leads to reduced regulation accuracy.
+
 
 ---
 
@@ -83,14 +95,3 @@ For the lower voltage test, the input is reduced from **15V to 10V**.
 This indicates that the Zener diode maintains regulation reasonably well even when the input voltage decreases, as long as the diode remains in its breakdown region.
 
 ---
-
-## Conclusion
-The Zener diode is capable of acting as a simple voltage regulator.  
-From the experiment, we observe:
-
-- The Zener diode regulates **better at higher input voltages** (strong breakdown region).  
-- Output voltage changes very little compared to large variations in input voltage.  
-- Regulation becomes weaker when the input voltage drops close to the Zener breakdown threshold.
-
-Overall, the Zener diode provides effective voltage regulation for low-current, low-precision applications.
-
